@@ -36,7 +36,7 @@ const Login = props => {
                 <View style = {{flexDirection: 'row', marginVertical: 5}}>
                     <Text style = {styles.textBody}>Don't have an account yet?</Text>
                     <Text style = {[styles.textBody, {color: '#3e4095'}]} 
-                        onPress = {() => props.navigation.navigate('SignUp')} >
+                        onPress = {() =>props.navigation.navigate('SignUp')} >
                         Sign In
                     </Text>
                 </View>
