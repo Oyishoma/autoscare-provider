@@ -2,11 +2,12 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import Login from './screens/Login';
 import Navigation from './navigation/Navigation';
+import ServiceRegisration from './screens/ServiceRegisration';
 
 export default function App() {
   return (
-    
-      <Navigation/>
+      <ServiceRegisration/>
+      //<Navigation/>
       //<Login/>
  
   );
