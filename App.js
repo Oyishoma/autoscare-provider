@@ -3,10 +3,14 @@ import { StyleSheet, Text, View } from 'react-native';
 import Login from './screens/Login';
 import Navigation from './navigation/Navigation';
 import ServiceRegisration from './screens/ServiceRegisration';
+import Homescreen from './screens/Homescreen';
+import Profile from './screens/Profile';
 
 export default function App() {
   return (
-      <ServiceRegisration/>
+    <Profile/>
+      //<Homescreen/>
+      //<ServiceRegisration/>
       //<Navigation/>
       //<Login/>
  
