@@ -6,15 +6,17 @@ import ServiceRegisration from './screens/ServiceRegisration';
 import Homescreen from './screens/Homescreen';
 import Profile from './screens/Profile';
 import Help from './screens/Help';
+import Feedback from './screens/Feedback';
 
 export default function App() {
   return (
     //<Profile/>
-    <Help/>
+    //<Help/>
       //<Homescreen/>
       //<ServiceRegisration/>
       //<Navigation/>
       //<Login/>
+    <Feedback/> 
  
   );
 }

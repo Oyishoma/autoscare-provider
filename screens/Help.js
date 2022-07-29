@@ -3,6 +3,7 @@ import React from 'react'
 import Header from '../components/Header'
 import Inputs from '../components/Inputs'
 import Account from '../components/Account'
+import Submit from '../components/Submit'
 import { FontAwesome } from '@expo/vector-icons'
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 //import { Input } from 'react-native-elements'
@@ -26,10 +27,14 @@ const Help = () => {
             style ={[styles.comment]}
           />
         </View>
+        
+        <View style = {styles.submitBtn}>
+          <Submit title = 'Log In' color = '#3e4095'/>
+        </View>
 
         <View>
           <View style = {styles.contactvia}><Text>Or contact us via:</Text></View>
-          <View style = {{flexDirection: 'row', marginTop: 40}}>
+          <View style = {{flexDirection: 'row', marginTop: 20}}>
           
           <FontAwesome name="facebook-square" size={60} color="#3b5998" />
           <Text> {' '}</Text><Text> {' '}</Text>
@@ -39,6 +44,8 @@ const Help = () => {
           <Text> {' '}</Text><Text> {' '}</Text>
           <MaterialCommunityIcons name="gmail" size={60} color="#ea4335" />
         </View>
+
+        
         </View>
     </View>
     </View>
@@ -58,19 +65,26 @@ const styles = StyleSheet.create({
     width: '90%',
     elevation: 5,
     backgroundColor: 'white',
-    height: 400,
+    height: 350,
     //margin: 10
   },
   comment: {
+    paddingTop: 10,
     width: '90%',
     color:'#0779e4',
     fontWeight: 'normal',
     fontSize: 20, 
     marginLeft: 5,
+  },  
+  submitBtn: {
+    width: '100%',
+    marginTop: 30,
+    alignItems: 'center'
   },
   contactvia: {
     fontSize: 20,
-    marginTop: 30,
+    marginTop: 20,
     alignItems: 'center'
-  }
+  }, 
+
 })
