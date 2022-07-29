@@ -5,10 +5,12 @@ import Navigation from './navigation/Navigation';
 import ServiceRegisration from './screens/ServiceRegisration';
 import Homescreen from './screens/Homescreen';
 import Profile from './screens/Profile';
+import Help from './screens/Help';
 
 export default function App() {
   return (
-    <Profile/>
+    //<Profile/>
+    <Help/>
       //<Homescreen/>
       //<ServiceRegisration/>
       //<Navigation/>

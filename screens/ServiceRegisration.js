@@ -18,7 +18,7 @@ const ServiceRegisration = () => {
             <Image source={require('../assets/user_image.jpg')} style = {styles.profileImage}/>
             <View style = {styles.providerData} >
             <View><Text> </Text></View>
-                <Inputs name = "Enter Business Name" icon = "briefcase" style = {styles.inputStyles}/>
+                <Inputs name = "Enter Business Name" icon = "briefcase"/>
                 <View><Text> </Text></View>
                 <Inputs name = "Choose Service" icon = "chevron-circle-down"/>
                 <View><Text> </Text></View>
