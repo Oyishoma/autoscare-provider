@@ -7,16 +7,18 @@ import Homescreen from './screens/Homescreen';
 import Profile from './screens/Profile';
 import Help from './screens/Help';
 import Feedback from './screens/Feedback';
+import Wallet from './screens/Wallet';
 
 export default function App() {
   return (
+    <Wallet/> 
     //<Profile/>
     //<Help/>
       //<Homescreen/>
       //<ServiceRegisration/>
       //<Navigation/>
       //<Login/>
-    <Feedback/> 
+    //<Feedback/> 
  
   );
 }

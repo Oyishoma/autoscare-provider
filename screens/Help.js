@@ -29,7 +29,7 @@ const Help = () => {
         </View>
         
         <View style = {styles.submitBtn}>
-          <Submit title = 'Log In' color = '#3e4095'/>
+          <Submit title = 'Submit' color = '#3e4095'/>
         </View>
 
         <View>
