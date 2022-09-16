@@ -4,7 +4,7 @@ import Header from '../components/Header'
 import Submit from '../components/Submit'
 import TransactionHistoryItems from '../components/TransactionHistoryItems'
 
-const wallet = () => {
+const Wallet = () => {
   return (
     <View style = {styles.container}>
 
@@ -34,6 +34,7 @@ const wallet = () => {
         <TransactionHistoryItems/>
         <TransactionHistoryItems/>
         <TransactionHistoryItems/>
+        <TransactionHistoryItems/>
         
 
       </View>
@@ -41,11 +42,12 @@ const wallet = () => {
   )
 }
 
-export default wallet
+export default Wallet
 
 const styles = StyleSheet.create({
     container: {
-        //flex: 1, 
+        //flex: 1,
+        backgroundColor: '#fff', 
     },
     balanceContainer: {
         backgroundColor: 'white',

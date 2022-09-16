@@ -10,7 +10,7 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 const Help = () => {
   return (
-  <View>
+  <View style = {styles.background}>
 
     <Header screenTitle = 'Help Center' /> 
 
@@ -57,7 +57,13 @@ export default Help
 const styles = StyleSheet.create({
   container: {
     //flex: 1,
-    alignItems: 'center'
+    alignItems: 'center',
+    backgroundColor: '#fff',
+    height: '100%'
+  },
+  background: {
+    backgroundColor: '#fff',
+    marginTop: 10
   },
   commentContainer: {
     paddingTop: 5,

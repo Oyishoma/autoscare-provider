@@ -6,7 +6,7 @@ import Submit from '../components/Submit'
 
 const Feedback = () => {
   return (
-    <View>
+    <View style = {styles.container}>
        <Header screenTitle = 'Feedback' /> 
 
        <View>
@@ -51,6 +51,9 @@ const Feedback = () => {
 export default Feedback
 
 const styles = StyleSheet.create({
+  container: {
+    backgroundColor: '#fff',
+  },
     ratingsText: {
         fontSize: 20,
         width: '90%',

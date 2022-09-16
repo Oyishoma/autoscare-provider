@@ -8,13 +8,15 @@ import Profile from './screens/Profile';
 import Help from './screens/Help';
 import Feedback from './screens/Feedback';
 import Wallet from './screens/Wallet';
+import DrawerNavigator from './navigation/DrawerNavigator';
 
 export default function App() {
   return (
-    <Wallet/> 
+    <DrawerNavigator/>
+    //<Wallet/> 
     //<Profile/>
     //<Help/>
-      //<Homescreen/>
+      //<Homescreen />
       //<ServiceRegisration/>
       //<Navigation/>
       //<Login/>

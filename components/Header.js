@@ -21,9 +21,7 @@ const Header = (props) => {
                 />
             </View>
 
-        </View>
-      
-       
+        </View>  
     </SafeAreaView>
   )
 }
@@ -40,6 +38,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
         paddingHorizontal: 10,
+        marginRight: 10,
         marginTop: 20,
         marginBottom: 0
         

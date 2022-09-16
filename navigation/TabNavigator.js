@@ -7,7 +7,7 @@ import { Ionicons } from "@expo/vector-icons";
 import ComingSoon from '../screens/ComingSoon';
 import ComingSoon2 from '../screens/ComingSoon2.js';
 import ComingSoon3 from '../screens/ComingSoon3.js';
-import HomeScreen from "../screens/HomeScreen";
+import Homescreen from "../screens/Homescreen";
 
 
 //screens
@@ -54,7 +54,7 @@ const BottomTabNavigator = (props) => {
         })}
         > 
     
-      <Tab.Screen name={homeName} component={HomeScreen} />
+      <Tab.Screen name={homeName} component={Homescreen} />
       <Tab.Screen name = {comingSoonName} component = {ComingSoon} options = {{headerShown: false}} />
       <Tab.Screen name = {comingSoonName2} component = {ComingSoon2} options = {{headerShown: false}}/>
       <Tab.Screen name = {comingSoonName3} component = {ComingSoon3} />

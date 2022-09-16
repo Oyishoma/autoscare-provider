@@ -121,7 +121,7 @@ sectionTitle: {
   email: {
     flex: 1,
     flexDirection: 'row',
-    backgroundColor: 'white',
+    backgroundColor: '#fff',
     paddingTop: 20,
     paddingLeft: 15,
     borderRadius: 15,
