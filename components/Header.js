@@ -1,9 +1,15 @@
 import { StyleSheet, Text, View, Image, ScrollView, SafeAreaView } from 'react-native'
 import React from 'react'
 import { FontAwesome } from '@expo/vector-icons';
+import { TouchableOpacity } from 'react-native-gesture-handler';
+import { useNavigation } from '@react-navigation/native';
 
 const Header = (props) => {
-  return (
+    
+    const navigation = useNavigation()
+
+    return (
+    
     <SafeAreaView style = {styles.safeAreaView}>
         <View style = {styles.header}>
             <Image 
@@ -14,11 +20,15 @@ const Header = (props) => {
                 <Text style = {styles.text}>{props.screenTitle}</Text>
             </View>
             <View>
-                <FontAwesome
+                <TouchableOpacity>
+                   <FontAwesome
                 name = 'navicon'
                 size = {22}
-                color = 'grey'
+                color = 'grey' 
+                onPress={() => navigation.openDrawer()} 
                 />
+                </TouchableOpacity>
+                
             </View>
 
         </View>  
@@ -39,12 +49,12 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         paddingHorizontal: 10,
         marginRight: 10,
-        marginTop: 20,
+        marginTop: 40,
         marginBottom: 0
         
     }, 
     text: {
-        margin: 20,
+        //margin: 20,
         fontSize: 20,
         fontWeight: 'bold',
         color: '#3e4095'

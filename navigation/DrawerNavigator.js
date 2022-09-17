@@ -20,6 +20,7 @@ import Feedback from '../screens/Feedback';
 import About from '../screens/About';
 import Help from '../screens/Help'
 import Contact from '../screens/Contact';
+import Header from '../components/Header';
 
 
 

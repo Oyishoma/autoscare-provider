@@ -3,19 +3,16 @@ import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 import { Ionicons } from "@expo/vector-icons";
-
-import ComingSoon from '../screens/ComingSoon';
-import ComingSoon2 from '../screens/ComingSoon2.js';
-import ComingSoon3 from '../screens/ComingSoon3.js';
 import Homescreen from "../screens/Homescreen";
+import Recent from '../screens/Recent'
+import Earnings from '../screens/Earnings'
+
 
 
 //screens
 const homeName = 'Home'
-const comingSoonName = 'ComingSoon'
-const comingSoonName2 = 'ComingSoon2'
-const comingSoonName3 = 'ComingSoon3'
-
+const recent = 'Recent'
+const earnings = 'Earnings'
 
 const Tab = createBottomTabNavigator();
 
@@ -30,13 +27,11 @@ const BottomTabNavigator = (props) => {
 
                 if (routeName === homeName) {
                     iconName = focused ? 'home' : 'home-outline'
-                } else if (routeName === comingSoonName) {
-                    iconName = focused ? 'settings-sharp' : 'settings-outline' 
-                } else if (routeName === comingSoonName2) {
-                    iconName = focused ? 'settings-sharp' : 'settings-outline' 
-                } else if (routeName === comingSoonName3) {
-                    iconName = focused ? 'settings-sharp' : 'settings-outline' 
-                } 
+                } else if (routeName === recent) {
+                  iconName = focused ? 'time-sharp' : 'time-outline' 
+              } else if (routeName === earnings) {
+                iconName = focused ? 'wallet-sharp' : 'wallet-outline' 
+            } 
                 return <Ionicons name = {iconName} size = {size} color = {color}/>
             },
             headerShown: false,
@@ -54,10 +49,9 @@ const BottomTabNavigator = (props) => {
         })}
         > 
     
+      <Tab.Screen name = {recent} component = {Recent} options = {{headerShown: false}} />
       <Tab.Screen name={homeName} component={Homescreen} />
-      <Tab.Screen name = {comingSoonName} component = {ComingSoon} options = {{headerShown: false}} />
-      <Tab.Screen name = {comingSoonName2} component = {ComingSoon2} options = {{headerShown: false}}/>
-      <Tab.Screen name = {comingSoonName3} component = {ComingSoon3} />
+      <Tab.Screen name = {earnings} component = {Earnings} options = {{headerShown: false}}/>
 
     </Tab.Navigator>
   );

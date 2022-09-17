@@ -7,7 +7,7 @@ import Map from '../components/Map'
 const Homescreen = () => {
   return (
     <View style = {styles.component}>
-     <Header screenTitle = 'AUTOS CARE' /> 
+     <Header screenTitle = 'AUTOS CARE' />  
      <View>
        <Map/>
      </View>
