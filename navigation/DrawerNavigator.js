@@ -5,22 +5,15 @@ import { NavigationContainer } from '@react-navigation/native';
 import { ContactStackNavigator } from "./StackNavigator";
 import TabNavigator from "./TabNavigator";
 import Homescreen from '../screens/Homescreen';
-//import Contact from '../screens/Contact';  
 import Profile from '../screens/Profile';
 import SideBar from '../components/SideBar';
-//import Providers from '../screens/Providers';
-//import PrivacyPolicy from '../screens/PrivacyPolicy';
-//import Feedback from '../screens/Feedback';
-//import Contact from '../screens/Contact';
-//import About from '../screens/About';
 import Inbox from '../screens/Inbox';
 import Wallet from '../screens/Wallet';
 import Privacy from '../screens/Privacy';
 import Feedback from '../screens/Feedback';
 import About from '../screens/About';
 import Help from '../screens/Help'
-import Contact from '../screens/Contact';
-import Header from '../components/Header';
+
 
 
 
@@ -54,7 +47,7 @@ const DrawerNavigator = () => {
             <Drawer.Screen name="About" component={About} options={{ drawerLabel: 'About' }}/>
             <Drawer.Screen name="Contact" component={Help} options={{ drawerLabel: 'Contact' }}/>
             {/* <Drawer.Screen name="About" component={About} options={{ drawerLabel: 'About' }}/> */}
-            {/* <Drawer.Screen name="Contact Us" component={Contact}  options={{ drawerLabel: 'Contact Us' }}/> */}
+            {/* <Drawer.Screen name="Contact Us" component={Contact}  options={{ drawerLabel: 'Contact Us' }}/> */} 
   
           </Drawer.Navigator>
         </NavigationContainer>
