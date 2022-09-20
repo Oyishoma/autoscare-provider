@@ -53,9 +53,10 @@ export default Feedback
 const styles = StyleSheet.create({
   container: {
     backgroundColor: '#fff',
+    height: '100%'
   },
     ratingsText: {
-        fontSize: 20,
+        fontSize: 16,
         width: '90%',
         textAlign: 'center',
         alignItems: 'center',
@@ -65,8 +66,8 @@ const styles = StyleSheet.create({
     ratingsContainer: {
         flex: 0, 
         flexDirection: 'row', 
-        marginTop: 30,
-        marginBottom: 30,
+        marginTop: 50,
+        marginBottom: 40,
         alignSelf: 'center'
       },
       feedbackContainer: {
@@ -83,12 +84,12 @@ const styles = StyleSheet.create({
         width: '90%',
         color:'#000',
         fontWeight: 'normal',
-        fontSize: 20, 
+        fontSize: 16, 
         marginLeft: 5,
       },
 
       submitBtn: {
         marginTop: 30,
-        alignItems: 'center'
+        alignItems: 'center',
       }
 })

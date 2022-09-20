@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     }, 
     submitText: {
         fontSize: 20, 
-        fontWeight: '200', 
+        fontWeight: 'bold', 
         color: 'white', 
         alignSelf: 'center',
         marginVertical: 10

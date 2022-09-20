@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
   message: {
     color: 'white', 
     alignSelf: 'flex-start', 
-    fontSize: 15, 
+    fontSize: 16, 
   }, 
   time: {
     color: 'lightgray',
